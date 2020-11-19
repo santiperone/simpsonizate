@@ -106,16 +106,19 @@ img{
 
 .personajes p {
     color: rgb(31, 31, 31);
+    pointer-events: none;
 }
 
 .personajes article div {
     height: 270px;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .personajes span,
 .personajes i {
     color: white;
+    pointer-events: none;
 }
 
 .personajes span {

@@ -30,8 +30,9 @@ window.addEventListener('load', function() {
    let gorgory = document.querySelector('#gorgory');
    let nelson = document.querySelector('#nelson');
    
-   const cambioPersonaje = function(){
-      this.classList.toggle('personaje-seleccionado');
+   const cambioPersonaje = function(event){
+      event.currentTarget.classList.toggle('personaje-seleccionado');
+      event.stopPropagation();
    };
 
    bart.addEventListener('click', cambioPersonaje);
